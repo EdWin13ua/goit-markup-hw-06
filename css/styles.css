@@ -37,20 +37,10 @@ body {
     color: #434455;
 }
 
-.container {
-    max-width: 1158px;
-    padding: 0 15px;
-    margin: 0 auto;
-}
-
 img {
     display: block;
     max-width: 100%;
     height: auto;
-}
-
-button {
-    cursor: pointer;
 }
 
 .visually-hidden {
@@ -72,7 +62,7 @@ button {
 
 /* #endregion Standart */
 
-/* #region Container */
+/* #region Containers */
 
 .container {
     max-width: 320px;
@@ -81,9 +71,10 @@ button {
 }
 
 @media screen and (min-width: 768px) {
-    .container {
-        max-width: 768px;
-}}
+.container {
+    max-width: 768px;
+    }
+}
 
 @media screen and (min-width: 1158px) {
     .container {
@@ -92,9 +83,9 @@ button {
     }
 }
 
-/* #endregion Container */
+/* #endregion Containers */
 
-/* #region Header */
+/* region Header */
 
 .header {
     border-bottom: 1px solid #e7e9fc;
@@ -105,6 +96,7 @@ button {
     display: flex;
     align-items: center;
     justify-content: space-between;
+
 }
 
 .header-nav-list, .header-contact {
@@ -119,6 +111,7 @@ button {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #4d5ae5;
+    padding: 24px 0;
 }
 
 .header-nav-logo {
@@ -141,4 +134,30 @@ button {
     fill: #2f2f37;
 }
 
-/* #endregion Header */
+@media screen and (min-width: 768px) {
+    .mob-menu-brg {
+        display: none;
+    }
+    .header-nav-list {
+        display: flex;
+        align-items: center;
+        gap: 40px;
+    }
+
+    .header-contact {
+        font-style: normal;
+        display: block;
+    }
+
+    .header-nav {
+        display: flex;
+        align-items: center;
+        }
+    
+    .header-nav-logo {
+        margin-right: 120px;
+        padding: 24px 0
+        }
+}
+
+/* endregion Header */
