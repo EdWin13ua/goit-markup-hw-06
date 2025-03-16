@@ -167,13 +167,14 @@
         <!-- #endregion Strategy -->
 
         <!-- #region Team -->
-        <!-- <section class="team section">
+        <section class="team section">
             <div class="container">
-                <h2 class="team-title team-paragraph">Our Team</h2>
+                <h2 class="section-title">Our Team</h2>
                 <ul class="team-list">
                     <li class="team-list-item">
-                        <img class="team-logo" src="./images/team/mark-guerrero.jpg" alt="mark-guerrero" width="264"
-                            height="260">
+                        <img class="team-logo" src="./images/team/mark-guerrero.jpg"
+                            srcset="./images/team/mark-guerrero.jpg 1x, ./images/team/mark-guerrero@2x.jpg 2x"
+                            alt="mark-guerrero" width="264" height="260">
                         <div class="team-info">
                             <h3 class="team-member">Mark Guerrero</h3>
                             <p class="team-specialty">Product Designer</p>
@@ -198,7 +199,9 @@
                         </div>
                     </li>
                     <li class="team-list-item">
-                        <img class="team-logo" src="./images/team/tom-ford.jpg" alt="tom-ford" width="264" height="260">
+                        <img class="team-logo" src="./images/team/tom-ford.jpg"
+                            srcset="./images/team/tom-ford.jpg 1x, ./images/team/tom-ford@2x.jpg 2x" alt="tom-ford"
+                            width="264" height="260">
                         <div class="team-info">
                             <h3 class="team-member">Tom Ford</h3>
                             <p class="team-specialty">Frontend Developer</p>
@@ -223,8 +226,9 @@
                         </div>
                     </li>
                     <li class="team-list-item">
-                        <img class="team-logo" src="./images/team/camila-garcia.jpg" alt="camila-garcia" width="264"
-                            height="260">
+                        <img class="team-logo" src="./images/team/camila-garcia.jpg"
+                            srcset="./images/team/camila-garcia.jpg 1x, ./images/team/camila-garcia@2x.jpg 2x"
+                            alt="camila-garcia" width="264" height="260">
                         <div class="team-info">
                             <h3 class="team-member">Camila Garcia</h3>
                             <p class="team-specialty">Marketing</p>
@@ -249,8 +253,9 @@
                         </div>
                     </li>
                     <li class="team-list-item">
-                        <img class="team-logo" src="./images/team/daniel-wilson.jpg" alt="daniel-wilson" width="264"
-                            height="260">
+                        <img class="team-logo" src="./images/team/daniel-wilson.jpg"
+                            srcset="./images/team/daniel-wilson.jpg 1x, ./images/team/daniel-wilson@2x.jpg 2x"
+                            alt="daniel-wilson" width="264" height="260">
                         <div class="team-info">
                             <h3 class="team-member">Daniel Wilson</h3>
                             <p class="team-specialty">UI Designer</p>
@@ -276,17 +281,28 @@
                     </li>
                 </ul>
             </div>
-        </section> -->
+        </section>
         <!-- #endregion Team -->
 
         <!-- #region Portfolio -->
-        <!-- <section class="portfolio section">
+        <section class="portfolio section">
             <div class="container">
-                <h2 class="portfolio-title">Our Portfolio</h2>
+                <h2 class="section-title">Our Portfolio</h2>
                 <ul class="portfolio-list">
                     <li class="portfolio-list-item">
                         <div class="portfolio-img">
-                            <img src="./images/portfolio/banking-app.jpg" alt="banking-app" width="360" height="300">
+                            <picture>
+                                <source
+                                    srcset="./images/portfolio/banking-app-desktop.jpg 1x, ./images/portfolio/banking-app-desktop@2x.jpg 2x"
+                                    media="(min-width: 1158px)">
+                                <source
+                                    srcset="./images/portfolio/banking-app-tablet.jpg 1x, ./images/portfolio/banking-app-tablet@2x.jpg 2x"
+                                    media="(min-width: 768px)">
+                                <source
+                                    srcset="./images/portfolio/banking-app-mobile.jpg 1x, ./images/portfolio/banking-app-mobile@2x.jpg 2x"
+                                    media="(max-width: 767px)">
+                                <img src="./images/portfolio/banking-app-mobile.jpg" alt="banking-app" />
+                            </picture>
                             <p class="portfolio-overlay">14 Stylish and User-Friendly App Design Concepts · Task Manager
                                 App · Calorie
                                 Tracker App
@@ -301,8 +317,18 @@
                     </li>
                     <li class="portfolio-list-item">
                         <div class="portfolio-img">
-                            <img src="./images/portfolio/cashless-payment.jpg" alt="cashless-payment" width="360"
-                                height="300">
+                            <picture>
+                                <source
+                                    srcset="./images/portfolio/cashless-payment-desktop.jpg 1x, ./images/portfolio/cashless-payment-desktop@2x.jpg 2x"
+                                    media="(min-width: 1158px)">
+                                <source
+                                    srcset="./images/portfolio/cashless-payment-tablet.jpg 1x, ./images/portfolio/cashless-payment-tablet@2x.jpg 2x"
+                                    media="(min-width: 768px)">
+                                <source
+                                    srcset="./images/portfolio/cashless-payment-mobile.jpg 1x, ./images/portfolio/cashless-payment-mobile@2x.jpg 2x"
+                                    media="(max-width: 767px)">
+                                <img src="./images/portfolio/cashless-payment-mobile.jpg" alt="banking-app" />
+                            </picture>
                             <p class="portfolio-overlay">14 Stylish and User-Friendly App Design Concepts · Task Manager
                                 App · Calorie
                                 Tracker App
@@ -317,8 +343,18 @@
                     </li>
                     <li class="portfolio-list-item">
                         <div class="portfolio-img">
-                            <img src="./images/portfolio/meditation-app.jpg" alt="meditation-app" width="360"
-                                height="300">
+                            <picture>
+                                <source
+                                    srcset="./images/portfolio/meditation-app-desktop.jpg 1x, ./images/portfolio/meditation-app-desktop@2x.jpg 2x"
+                                    media="(min-width: 1158px)">
+                                <source
+                                    srcset="./images/portfolio/meditation-app-tablet.jpg 1x, ./images/portfolio/meditation-app-tablet@2x.jpg 2x"
+                                    media="(min-width: 768px)">
+                                <source
+                                    srcset="./images/portfolio/meditation-app-mobile.jpg 1x, ./images/portfolio/meditation-app-mobile@2x.jpg 2x"
+                                    media="(max-width: 767px)">
+                                <img src="./images/portfolio/meditation-app-mobile.jpg" alt="banking-app" />
+                            </picture>
                             <p class="portfolio-overlay">14 Stylish and User-Friendly App Design Concepts · Task Manager
                                 App · Calorie
                                 Tracker App
@@ -332,8 +368,19 @@
                         </div>
                     </li>
                     <li class="portfolio-list-item">
-                        <div class="portfolio-img"><img src="./images/portfolio/taxi-service.jpg" alt="taxi-service"
-                                width="360" height="300">
+                        <div class="portfolio-img">
+                            <picture>
+                                <source
+                                    srcset="./images/portfolio/taxi-service-desktop.jpg 1x, ./images/portfolio/taxi-service-desktop@2x.jpg 2x"
+                                    media="(min-width: 1158px)">
+                                <source
+                                    srcset="./images/portfolio/taxi-service-tablet.jpg 1x, ./images/portfolio/taxi-service-tablet@2x.jpg 2x"
+                                    media="(min-width: 768px)">
+                                <source
+                                    srcset="./images/portfolio/taxi-service-moobile.jpg 1x, ./images/portfolio/taxi-service-moobile@2x.jpg 2x"
+                                    media="(max-width: 767px)">
+                                <img src="./images/portfolio/taxi-service-moobile.jpg" alt="banking-app" />
+                            </picture>
                             <p class="portfolio-overlay">14 Stylish and User-Friendly App Design Concepts · Task Manager
                                 App · Calorie
                                 Tracker App
@@ -347,8 +394,18 @@
                     </li>
                     <li class="portfolio-list-item">
                         <div class="portfolio-img">
-                            <img src="./images/portfolio/screen-illustrations.jpg" alt="screen-illustrations"
-                                width="360" height="300">
+                            <picture>
+                                <source
+                                    srcset="./images/portfolio/screen-illustrations-desktop.jpg 1x, ./images/portfolio/screen-illustrations-desktop@2x.jpg 2x"
+                                    media="(min-width: 1158px)">
+                                <source
+                                    srcset="./images/portfolio/screen-illustrations-tablet.jpg 1x, ./images/portfolio/screen-illustrations-tablet@2x.jpg 2x"
+                                    media="(min-width: 768px)">
+                                <source
+                                    srcset="./images/portfolio/screen-illustrations-mobile.jpg 1x, ./images/portfolio/screen-illustrations-mobile@2x.jpg 2x"
+                                    media="(max-width: 767px)">
+                                <img src="./images/portfolio/screen-illustrations-mobile.jpg" alt="banking-app" />
+                            </picture>
                             <p class="portfolio-overlay">14 Stylish and User-Friendly App Design Concepts · Task Manager
                                 App · Calorie
                                 Tracker App
@@ -363,8 +420,18 @@
                     </li>
                     <li class="portfolio-list-item">
                         <div class="portfolio-img">
-                            <img src="./images/portfolio/online-courses.jpg" alt="online-courses" width="360"
-                                height="300">
+                            <picture>
+                                <source
+                                    srcset="./images/portfolio/online-courses-desktop.jpg 1x, ./images/portfolio/online-courses-desktop@2x.jpg 2x"
+                                    media="(min-width: 1158px)">
+                                <source
+                                    srcset="./images/portfolio/online-courses-tablet.jpg 1x, ./images/portfolio/online-courses-tablet@2x.jpg 2x"
+                                    media="(min-width: 768px)">
+                                <source
+                                    srcset="./images/portfolio/online-courses-mobile.jpg 1x, ./images/portfolio/online-courses-mobile@2x.jpg 2x"
+                                    media="(max-width: 767px)">
+                                <img src="./images/portfolio/online-courses-mobile.jpg" alt="banking-app" />
+                            </picture>
                             <p class="portfolio-overlay">14 Stylish and User-Friendly App Design Concepts · Task Manager
                                 App · Calorie
                                 Tracker App
@@ -374,17 +441,16 @@
                         <div class="portfolio-info">
                             <h3 class="portfolio-item">Online Courses</h3>
                             <p class="portfolio-offer">Marketing</p>
-
                         </div>
                     </li>
                 </ul>
             </div>
-        </section> -->
+        </section>
         <!-- #endregion Portfolio-->
     </main>
 
     <!-- #region Footer -->
-    <!-- <footer class="end">
+    <footer class="end">
         <div class="container footer-container">
             <div class="footer-logo">
                 <a class="end-logo" href="./index.html">Web<span class="end-logo-span">Studio</span></a>
@@ -395,20 +461,20 @@
             <div class="soc-media">
                 <p class="footer-soc">Social media</p>
                 <ul class="footer-soc-list">
-                    <li class="footer-soc-list-item"><a href="" class="footer-soc-list-link"><svg class="soc-icon"
-                                width="24" height="24">
+                    <li class="soc-list-item"><a href="" class="footer-soc-list-link"><svg class="soc-icon" width="24"
+                                height="24">
                                 <use href="./images/soc_logo/soc_logo.svg#icon-instagram"></use>
                             </svg></a></li>
-                    <li class="footer-soc-list-item"><a href="" class="footer-soc-list-link"><svg class="soc-icon"
-                                width="24" height="24">
+                    <li class="soc-list-item"><a href="" class="footer-soc-list-link"><svg class="soc-icon" width="24"
+                                height="24">
                                 <use href="./images/soc_logo/soc_logo.svg#icon-twitter"></use>
                             </svg></a></li>
-                    <li class="footer-soc-list-item"><a href="" class="footer-soc-list-link"><svg class="soc-icon"
-                                width="24" height="24">
+                    <li class="soc-list-item"><a href="" class="footer-soc-list-link"><svg class="soc-icon" width="24"
+                                height="24">
                                 <use href="./images/soc_logo/soc_logo.svg#icon-facebook"></use>
                             </svg></a></li>
-                    <li class="footer-soc-list-item"><a href="" class="footer-soc-list-link"><svg class="soc-icon"
-                                width="24" height="24">
+                    <li class="soc-list-item"><a href="" class="footer-soc-list-link"><svg class="soc-icon" width="24"
+                                height="24">
                                 <use href="./images/soc_logo/soc_logo.svg#icon-linkedin"></use>
                             </svg></a></li>
                 </ul>
@@ -430,11 +496,11 @@
                 </form>
             </div>
         </div>
-    </footer> -->
+    </footer>
     <!-- #endregion Footer -->
 
     <!-- #region Modal -->
-    <!-- <div class="backdrop">
+    <div class="backdrop">
         <div class="modal">
             <button type="button" class="btn-closed">
                 <svg class="icon-close" width="8" height="8">
@@ -490,7 +556,7 @@
                 <button class="btn-send" type="submit">Send</button>
             </form>
         </div>
-    </div> -->
+    </div>
 
     <!-- #endregion Modal -->
 </body>

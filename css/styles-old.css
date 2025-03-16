@@ -264,15 +264,16 @@ img {
 /* #region Team */
 
 .team-paragraph {
-    margin: 0 auto 72px;
+    
 }
 
 .team-list {
     display: flex;
     gap: 24px;
+    margin: 0 auto 72px;
 }
 
-.team-title {
+.section-title {
     font-size: 36px;
     line-height: 1.11;
     text-align: center;
@@ -517,7 +518,7 @@ img {
     margin-bottom: 16px
 }
 
-.footer-soc-list-item {
+.soc-list-item {
     display: flex;
     align-items: center;
     justify-content: center;
